@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>headphone</title>
+</head>
+<body>
+    <div class="container";>
+        <div class="path"></div>
+        <ul>
+            <li><a href="#"">Home</a></li>
+            <li><a href="#"">Product</a></li>
+            <li><a href="#"">Contact</a></li>
+            <li><a href="#"">About Us</a></li>
+        </ul>
+        <div class="thumbnail">
+            <li><img src="Hp2.png" onclick="big('Hp2.png'); path('#e5e5e5'); bg('maroon')"></li>
+            <li><img src="Hp3.png" onclick="big('Hp3.png'); path('white'); bg('violet')"></li>
+            <li><img src="Hp4.png" onclick="big('Hp4.png'); path('#e5e5e5'); bg('green')"></li>
+        </div>
+    <div class="big-img">
+        <img src="Hp3.png" class="big">
+    </div>
+    <div class="content">
+        <p><i class='bx bx-play'></i> Let's Play</p>
+        <h1>Rock and Vibe it <i class='bx bxs-music'></i><br>Stylish and Unique</h1>
+        <h5><i class='bx bx-smile' ></i> For Music Lovers & Gamers <i class='bx bxs-joystick'></i></h5>
+    </div>
+    </div>
+</body>
+<script>
+    function big(img){
+        document.querySelector('.big').src= img;
+    }
+    function path(color)
+    {
+        const path=document.querySelector('.path');
+        path.style.background= color;
+    }
+    function bg(background)
+    {
+        const bg=document.querySelector('.container');
+        bg.style.background= background;
+    }
+</script>
+
+</html>
